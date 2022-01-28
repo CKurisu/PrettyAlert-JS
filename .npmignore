@@ -1,0 +1,9 @@
+.vscode
+.gitattributes
+index.html
+src
+img
+*.tgz
+.editorconfig
+tslint.json
+tsconfig.json
