@@ -7,3 +7,9 @@ img
 .editorconfig
 tslint.json
 tsconfig.json
+assets/*
+postcss.config.json
+babel.config.json
+docs-src/*
+test/*
+postcss.config.js
