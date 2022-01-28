@@ -1,0 +1,20 @@
+{
+  "name": "prettyalert",
+  "version": "1.0.0",
+  "description": "A beautiful replacement for JS \"alert\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://none.com"
+  },
+  "keywords": [
+    "pretty",
+    "js",
+    "alert"
+  ],
+  "author": "chernos",
+  "license": "MIT"
+}
