@@ -1,8 +1,8 @@
-@import './css/icons';
-@import './css/text';
-@import './css/buttons';
-@import './css/content';
-@import './css/button-loader';
+@import "./css/icons";
+@import "./css/text";
+@import "./css/buttons";
+@import "./css/content";
+@import "./css/button-loader";
 
 :root {
   --swal-modal-width: 478px;
@@ -23,25 +23,25 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-  &::before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; /* vertical alignment of the inline element */
-    height: 100%;
-  }
+}
+.swal-overlay::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle; /* vertical alignment of the inline element */
+  height: 100%;
+}
 
-  &--show-modal {
-    opacity: 1;
-    pointer-events: auto;
+swal-overlay--show-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
 
-    & .swal-modal {
-      opacity: 1;
-      pointer-events: auto;
-      box-sizing: border-box;
-      animation: showSweetAlert 0.3s;
-      will-change: transform;
-    }
-  }
+.swal-overlay .swal-modal {
+  opacity: 1;
+  pointer-events: auto;
+  box-sizing: border-box;
+  animation: showSweetAlert 0.3s;
+  will-change: transform;
 }
 
 .swal-modal {

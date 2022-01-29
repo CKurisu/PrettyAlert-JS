@@ -12,7 +12,7 @@
   <span align="center">
     SweetAlert project continuation
     <li align="center">
-      added active support on github
+      - added active support on github
     </li>
   </span>
 </p>

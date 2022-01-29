@@ -1,7 +1,7 @@
 import { PrettyAlert } from '../src/core';
 
 declare global {
-  const SweetAlert: PrettyAlert;
+    const SweetAlert: PrettyAlert;
 }
 declare const swal: PrettyAlert;
 export default swal;

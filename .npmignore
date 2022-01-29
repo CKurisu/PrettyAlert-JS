@@ -13,3 +13,4 @@ babel.config.json
 docs-src/*
 test/*
 postcss.config.js
+webpack.config.*
