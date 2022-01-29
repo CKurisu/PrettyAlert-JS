@@ -18,8 +18,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/npm/v/prettyalert?style=flat-square" alt="npm version" height="18"></a>
-  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://travis-ci.org/t4t5/sweetalert.svg" alt="Build status" /></a>
+  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/npm/v/prettyalert?style=flat-square" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/github/checks-status/CKurisu/PrettyAlert-JS/6ab1ea2ca93a7123f3c1970e3f5e1a0df5ae312a?style=flat-square" alt="Build status" /></a>
   <a href="https://www.npmjs.com/package/prettyalert">
     <img src="https://img.shields.io/npm/dw/prettyalert?style=flat-square" />
   </a>
