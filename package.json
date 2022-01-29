@@ -1,16 +1,13 @@
 {
   "name": "prettyalert",
-  "version": "1.0.0-001",
+  "version": "1.0.1",
   "description": "A beautiful replacement for JS \"alert\"",
   "main": "dist/sweetalert.min.js",
   "types": "typings/sweetalert.d.ts",
   "scripts": {
-    "build":"webpack -p",
-    "buildtest":"npm run build && jest",
+    "build": "webpack -p",
+    "buildtest": "npm run build && jest",
     "test": "jest",
-    "builddocs": "node_modules/jus/cli.js build docs-src docs",
-    "docs": "npm run build && node_modules/jus/cli.js serve docs-src",
-    "prepare": "npm run build && npm run builddocs",
     "prepublishOnly": "npm run build"
   },
   "repository": {
