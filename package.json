@@ -2,8 +2,8 @@
   "name": "prettyalert",
   "version": "1.0.3",
   "description": "A beautiful replacement for JS \"alert\"",
-  "main": "dist/sweetalert.min.js",
-  "types": "typings/sweetalert.d.ts",
+  "main": "dist/prettyalert.min.js",
+  "types": "typings/prettyalert.d.ts",
   "scripts": {
     "build": "webpack -p",
     "buildtest": "npm run build && jest",

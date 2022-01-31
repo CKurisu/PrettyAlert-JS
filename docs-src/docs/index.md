@@ -8,49 +8,51 @@ layout: docs
 
   **Type:** `string`
 
-  **Default:** `""` (*empty string*)
+  **Default:** `""` (_empty string_)
 
   **Description:**
 
   The modal's text. It can either be added as a configuration under the key `text` (as in the example below), or passed as the first and only parameter (e.g. `swal("Hello world!")`), or the second one if you have multiple string parameters (e.g. `swal("A title", "Hello world!")`).
 
   **Example:**
+
   ```js
   swal({
     text: "Hello world!",
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `title`
 
   **Type:** `string`
 
-  **Default:** `""` (*empty string*)
+  **Default:** `""` (_empty string_)
 
   **Description:**
 
   The title of the modal. It can either be added as a configuration under the key `title` (as in the example below), or passed as the first string parameter – as long as it's not the only one – of the `swal` function (e.g. `swal("Here's a title!", "Here's some text")`).
 
   **Example:**
+
   ```js
   swal({
     title: "Here's a title!",
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `icon`
 
   **Type:** `string`
 
-  **Default:** `""` (*empty string*)
+  **Default:** `""` (_empty string_)
 
   **Description:**
 
-  An icon for the modal. SweetAlert comes with 4 built-in icons that you can use:
+  An icon for the modal. PrettyAlert comes with 4 built-in icons that you can use:
 
   - `"warning"`
   - `"error"`
@@ -60,19 +62,21 @@ layout: docs
   It can either be added as a configuration under the key `icon`, or passed as the third string parameter of the `swal` function (e.g. `swal("Title", "Text", "success")`).
 
   **Example:**
+
   ```js
   swal({
     icon: "success",
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `button`
 
   **Type:** `string|boolean|ButtonOptions`
 
   **Default:**
+
   ```js
   {
     text: "OK",
@@ -88,11 +92,13 @@ layout: docs
   The confirm button that's shown by default. You can change its text by setting `button` to a string, or you can tweak more setting by passing a `ButtonOptions` object. Setting it to `false` hides the button.
 
   **Examples:**
+
   ```js
   swal({
     button: "Coolio",
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -102,6 +108,7 @@ layout: docs
     },
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -109,14 +116,15 @@ layout: docs
     button: false,
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `buttons`
 
   **Type:** `boolean|string[]|ButtonOptions[]|ButtonList`
 
   **Default:**
+
   ```js
   {
     cancel: {
@@ -151,6 +159,7 @@ layout: docs
     buttons: ["Stop", "Do it!"],
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -158,6 +167,7 @@ layout: docs
     buttons: [true, "Do it!"],
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -165,6 +175,7 @@ layout: docs
     buttons: false,
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -175,6 +186,7 @@ layout: docs
     },
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -189,8 +201,8 @@ layout: docs
     },
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `content`
 
@@ -209,6 +221,7 @@ layout: docs
     content: "input",
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -222,6 +235,7 @@ layout: docs
     },
   });
   ```
+
   <preview-button></preview-button>
 
   ```js
@@ -232,26 +246,27 @@ layout: docs
     content: slider,
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `className`
 
   **Type:** `string`
 
-  **Default**: `""` (*empty string*)
+  **Default**: `""` (_empty string_)
 
   **Description**:
 
-  Add a custom class to the SweetAlert modal. This is handy for changing the appearance.
+  Add a custom class to the PrettyAlert modal. This is handy for changing the appearance.
 
   **Example**:
 
   ```js
-    swal("Hello world!", {
-      className: "red-bg",
-    });
+  swal("Hello world!", {
+    className: "red-bg",
+  });
   ```
+
   <preview-button></preview-button>
 
 - ### `closeOnClickOutside`
@@ -271,6 +286,7 @@ layout: docs
     closeOnClickOutside: false,
   });
   ```
+
   <preview-button></preview-button>
 
 - ### `closeOnEsc`
@@ -290,8 +306,8 @@ layout: docs
     closeOnEsc: false,
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `dangerMode`
 
@@ -311,8 +327,8 @@ layout: docs
     buttons: true,
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 - ### `timer`
 
@@ -332,18 +348,17 @@ layout: docs
     timer: 3000,
   });
   ```
-  <preview-button></preview-button>
 
+  <preview-button></preview-button>
 
 # Methods
 
-| Name | Description | Example |
-| ---- | ----------- | ------- |
-| `close` | Closes the currently open SweetAlert, as if you pressed the cancel button. | `swal.close()` |
-| `getState` | Get the state of the current SweetAlert modal. | `swal.getState()` |
+| Name             | Description                                                                                                                                                          | Example                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `close`          | Closes the currently open PrettyAlert, as if you pressed the cancel button.                                                                                          | `swal.close()`                                        |
+| `getState`       | Get the state of the current PrettyAlert modal.                                                                                                                      | `swal.getState()`                                     |
 | `setActionValue` | Change the promised value of one of the modal's buttons. You can either pass in just a string (by default it changes the value of the confirm button), or an object. | `swal.setActionValue({ confirm: 'Text from input' })` |
-| `stopLoading` | Removes all loading states on the modal's buttons. Use it in combination with the button option `closeModal: false`. | `swal.stopLoading()`
-
+| `stopLoading`    | Removes all loading states on the modal's buttons. Use it in combination with the button option `closeModal: false`.                                                 | `swal.stopLoading()`                                  |
 
 # Theming
 
@@ -356,6 +371,7 @@ layout: docs
     background-color: rgba(43, 165, 137, 0.45);
   }
   ```
+
   <preview-button></preview-button>
 
 - ### `swal-modal`
@@ -364,10 +380,11 @@ layout: docs
 
   ```css
   .swal-modal {
-    background-color: rgba(63,255,106,0.69);
+    background-color: rgba(63, 255, 106, 0.69);
     border: 3px solid white;
   }
   ```
+
   <preview-button></preview-button>
 
 - ### `swal-title`
@@ -382,6 +399,7 @@ layout: docs
     margin-bottom: 28px;
   }
   ```
+
   <preview-button></preview-button>
 
 - ### `swal-text`
@@ -390,15 +408,16 @@ layout: docs
 
   ```css
   .swal-text {
-    background-color: #FEFAE3;
+    background-color: #fefae3;
     padding: 17px;
-    border: 1px solid #F0E1A1;
+    border: 1px solid #f0e1a1;
     display: block;
     margin: 22px;
     text-align: center;
     color: #61534e;
   }
   ```
+
   <preview-button></preview-button>
 
 - ### `swal-footer`
@@ -409,10 +428,11 @@ layout: docs
   .swal-footer {
     background-color: rgb(245, 248, 250);
     margin-top: 32px;
-    border-top: 1px solid #E9EEF1;
+    border-top: 1px solid #e9eef1;
     overflow: hidden;
   }
   ```
+
   <preview-button></preview-button>
 
 - ### `swal-button`
@@ -427,10 +447,11 @@ layout: docs
   .swal-button {
     padding: 7px 19px;
     border-radius: 2px;
-    background-color: #4962B3;
+    background-color: #4962b3;
     font-size: 12px;
     border: 1px solid #3e549a;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   }
   ```
+
   <preview-button></preview-button>

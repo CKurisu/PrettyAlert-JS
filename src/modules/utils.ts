@@ -27,10 +27,10 @@ export const removeNode = (node: Node) => {
 
 export const throwErr = (message: string) => {
   // Remove multiple spaces:
-  message = message.replace(/ +(?= )/g,'');
+  message = message.replace(/ +(?= )/g, '');
   message = message.trim();
 
-  throw `SweetAlert: ${message}`;
+  throw `PrettyAlert: ${message}`;
 };
 
 /*

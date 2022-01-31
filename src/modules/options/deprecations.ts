@@ -1,5 +1,5 @@
 /*
- * A list of all the deprecated options from SweetAlert 1.X
+ * A list of all the deprecated options from PrettyAlert 1.X
  * These should log a warning telling users how to upgrade.
  */
 
@@ -9,7 +9,7 @@ export const logDeprecation = (name: string): void => {
 
   const destiny = (onlyRename) ? 'renamed' : 'deprecated';
 
-  let message = `SweetAlert warning: "${name}" option has been ${destiny}.`;
+  let message = `PrettyAlert warning: "${name}" option has been ${destiny}.`;
 
   if (replacement) {
     const subOptionText = (subOption) ? ` "${subOption}" in ` : ' ';

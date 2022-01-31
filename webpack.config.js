@@ -8,7 +8,7 @@ module.exports = (_env, args) => {
   const IS_PROD = args.p;
 
   const BUILD_PATH = 'dist';
-  const JS_FILE_NAME = 'sweetalert.min.js';
+  const JS_FILE_NAME = 'prettyalert.min.js';
   const devtool = IS_PROD ? false : 'source-map';
 
   const plugins = [
@@ -20,7 +20,7 @@ module.exports = (_env, args) => {
     plugins.push(
       new CopyWebpackPlugin([{
         from: 'prettyalert.d.ts',
-        to: '../typings/sweetalert.d.ts',
+        to: '../typings/prettyalert.d.ts',
       }])
     );
   }
@@ -51,7 +51,7 @@ module.exports = (_env, args) => {
           test: require.resolve("./src/prettyalert"),
           use: [{
             loader: 'expose-loader',
-            options: 'sweetAlert'
+            options: 'prettyAlert'
           }, {
             loader: 'expose-loader',
             options: 'swal'

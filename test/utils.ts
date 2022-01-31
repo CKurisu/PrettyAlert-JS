@@ -1,4 +1,4 @@
-export const swal = require('../dist/sweetalert.min');
+export const swal = require('../dist/prettyalert.min');
 
 export const $ = require('jquery');
 

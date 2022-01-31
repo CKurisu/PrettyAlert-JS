@@ -21,7 +21,7 @@ export const init = (opts: SwalOptions): void => {
 
   if (!modal) {
     if (!document.body) {
-      throwErr("You can only use SweetAlert AFTER the DOM has loaded!");
+      throwErr("You can only use PrettyAlert AFTER the DOM has loaded!");
     }
 
     initOverlayOnce();
