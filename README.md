@@ -48,21 +48,21 @@ swal("Hello world!");
 
 ## Upgrading from 1.X
 
-Many improvements and breaking changes have been introduced in the 2.0 release. Make sure you read the [upgrade guide](https://sweetalert.js.org/guides/#upgrading-from-1x) to avoid nasty suprises!
+Many improvements and breaking changes have been introduced in the 2.0 release. Make sure you read the [upgrade guide](https://ckurisu.github.io/PrettyAlert-JS/guides/#upgrading-from-1x) to avoid nasty suprises!
 
 ## Guides
 
-- [Installation](https://sweetalert.js.org/guides/#installation)
-- [Getting started](https://sweetalert.js.org/guides/#getting-started)
-- [Advanced examples](https://sweetalert.js.org/guides/#advanced-examples)
-- [Using with libraries](https://sweetalert.js.org/guides/#using-with-libraries)
-- [Upgrading from 1.X](https://sweetalert.js.org/guides/#upgrading-from-1x)
+- [Installation](https://ckurisu.github.io/PrettyAlert-JS/guides/#installation)
+- [Getting started](https://ckurisu.github.io/PrettyAlert-JS/guides/#getting-started)
+- [Advanced examples](https://ckurisu.github.io/PrettyAlert-JS/guides/#advanced-examples)
+- [Using with libraries](https://ckurisu.github.io/PrettyAlert-JS/guides/#using-with-libraries)
+- [Upgrading from 1.X](https://ckurisu.github.io/PrettyAlert-JS/guides/#upgrading-from-1x)
 
 ## Documentation
 
-- [Configuration](https://sweetalert.js.org/docs/#configuration)
-- [Methods](https://sweetalert.js.org/docs/#methods)
-- [Theming](https://sweetalert.js.org/docs/#theming)
+- [Configuration](https://ckurisu.github.io/PrettyAlert-JS/docs/#configuration)
+- [Methods](https://ckurisu.github.io/PrettyAlert-JS/docs/#methods)
+- [Theming](https://ckurisu.github.io/PrettyAlert-JS/docs/#theming)
 
 ## Examples
 
@@ -207,7 +207,7 @@ swal(
 3. Run `npm run builddocs` to compile the changes to the `docs` folder
 4. Submit pull request
 
-## Contributors
+<!-- ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](https://github.com/t4t5/sweetalert#contributing)].
 <a href="https://github.com/t4t5/sweetalert/graphs/contributors"><img src="https://opencollective.com/SweetAlert/contributors.svg?width=890&button=false" /></a>
@@ -231,4 +231,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/SweetAlert/sponsor/6/website" target="_blank"><img src="https://opencollective.com/SweetAlert/sponsor/6/avatar.svg"></a>
 <a href="https://opencollective.com/SweetAlert/sponsor/7/website" target="_blank"><img src="https://opencollective.com/SweetAlert/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/SweetAlert/sponsor/8/website" target="_blank"><img src="https://opencollective.com/SweetAlert/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/SweetAlert/sponsor/9/website" target="_blank"><img src="https://opencollective.com/SweetAlert/sponsor/9/avatar.svg"></a>
+<a href="https://opencollective.com/SweetAlert/sponsor/9/website" target="_blank"><img src="https://opencollective.com/SweetAlert/sponsor/9/avatar.svg"></a> -->
