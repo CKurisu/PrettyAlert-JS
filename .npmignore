@@ -14,3 +14,4 @@ docs-src/*
 test/*
 postcss.config.js
 webpack.config.*
+*.babelrc
