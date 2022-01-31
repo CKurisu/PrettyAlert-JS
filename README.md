@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://sweetalert.js.org">
-    <img alt="SweetAlert" src="https://raw.githubusercontent.com/t4t5/sweetalert/e3c2085473a0eb5a6b022e43eb22e746380bb955/assets/logotype.png" width="300">
+    <img alt="PrettyAlert" src="https://raw.githubusercontent.com/t4t5/sweetalert/e3c2085473a0eb5a6b022e43eb22e746380bb955/assets/logotype.png" width="300">
   </a>
 </p>
 
@@ -11,15 +11,14 @@
   <br/>
   <span align="center">
     SweetAlert project continuation
-    <li align="center">
+    <br/>
       - added active support on github
-    </li>
   </span>
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/npm/v/prettyalert?style=flat-square" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/github/checks-status/CKurisu/PrettyAlert-JS/6ab1ea2ca93a7123f3c1970e3f5e1a0df5ae312a?style=flat-square" alt="Build status" /></a>
+  <a href="https://www.npmjs.com/package/prettyalert"><img src="https://img.shields.io/github/checks-status/CKurisu/PrettyAlert-JS/v1.0.1?style=flat-square" alt="Build status" /></a>
   <a href="https://www.npmjs.com/package/prettyalert">
     <img src="https://img.shields.io/npm/dw/prettyalert?style=flat-square" />
   </a>
@@ -36,13 +35,13 @@
 ## Installation
 
 ```bash
-$ npm install --save sweetalert
+$ npm install --save prettyalert
 ```
 
 ## Usage
 
 ```javascript
-import swal from "sweetalert";
+import swal from "prettyalert";
 
 swal("Hello world!");
 ```

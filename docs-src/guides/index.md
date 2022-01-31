@@ -6,16 +6,16 @@ layout: guides
 
 ## NPM/Yarn
 
-NPM combined with a tool like [Browserify](http://browserify.org) or [Webpack](https://webpack.js.org) is the recommended method of installing SweetAlert.
+NPM combined with a tool like [Browserify](http://browserify.org) or [Webpack](https://webpack.js.org) is the recommended method of installing PrettyAlert.
 
 ```bash
-npm install sweetalert --save
+npm install prettyalert --save
 ```
 
 Then, simply import it into your application:
 
 ```javascript
-import swal from 'sweetalert';
+import swal from "prettyalert";
 ```
 
 ## CDN
@@ -30,11 +30,12 @@ You can also find SweetAlert on [unpkg](https://unpkg.com/sweetalert) and [jsDel
 
 ## Showing an alert
 
-After importing the files into your application, you can call the `swal` function (make sure it's called *after* the DOM has loaded!)
+After importing the files into your application, you can call the `swal` function (make sure it's called _after_ the DOM has loaded!)
 
 ```js
 swal("Hello world!");
 ```
+
 <preview-button></preview-button>
 
 If you pass two arguments, the first one will be the modal's title, and the second one its text.
@@ -42,6 +43,7 @@ If you pass two arguments, the first one will be the modal's title, and the seco
 ```js
 swal("Here's the title!", "...and here's the text!");
 ```
+
 <preview-button></preview-button>
 
 And with a third argument, you can add an icon to your alert! There are 4 predefined ones: `"warning"`, `"error"`, `"success"` and `"info"`.
@@ -49,6 +51,7 @@ And with a third argument, you can add an icon to your alert! There are 4 predef
 ```js
 swal("Good job!", "You clicked the button!", "success");
 ```
+
 <preview-button></preview-button>
 
 ## Using options
@@ -73,6 +76,7 @@ swal({
   button: "Aww yiss!",
 });
 ```
+
 <preview-button></preview-button>
 
 You can even combine the first syntax with the second one, which might save you some typing:
@@ -92,14 +96,15 @@ SweetAlert uses [promises](https://developer.mozilla.org/en/docs/Web/JavaScript/
 If the user clicks the confirm button, the promise resolves to `true`. If the alert is dismissed (by clicking outside of it), the promise resolves to `null`.
 
 ```js
-swal("Click on either the button or outside the modal.")
-.then((value) => {
+swal("Click on either the button or outside the modal.").then((value) => {
   swal(`The returned value is: ${value}`);
 });
 ```
+
 <preview-button></preview-button>
 
 This comes in handy if you want to warn the user before they perform a dangerous action. We can make our alert even better by setting some more options:
+
 - `icon` can be set to the predefined `"warning"` to show a nice warning icon.
 - By setting `buttons` (plural) to `true`, SweetAlert will show a cancel button in addition to the default confirm button.
 - By setting `dangerMode` to `true`, the focus will automatically be set on the cancel button instead of the confirm button, and the confirm button will be red instead of blue to emphasize the dangerous action.
@@ -111,8 +116,7 @@ swal({
   icon: "warning",
   buttons: true,
   dangerMode: true,
-})
-.then((willDelete) => {
+}).then((willDelete) => {
   if (willDelete) {
     swal("Poof! Your imaginary file has been deleted!", {
       icon: "success",
@@ -122,8 +126,8 @@ swal({
   }
 });
 ```
-<preview-button></preview-button>
 
+<preview-button></preview-button>
 
 # Advanced examples
 
@@ -131,13 +135,14 @@ swal({
 
 We've already seen how we can set the text on the confirm button using `button: "Aww yiss!"`.
 
-If we also want to show and customize the *cancel button*, we can instead set `buttons` to an *array of strings*, where the first value is the cancel button's text and the second one is the confirm button's text:
+If we also want to show and customize the _cancel button_, we can instead set `buttons` to an _array of strings_, where the first value is the cancel button's text and the second one is the confirm button's text:
 
 ```js
 swal("Are you sure you want to do this?", {
   buttons: ["Oh noez!", "Aww yiss!"],
 });
 ```
+
 <preview-button></preview-button>
 
 If you want one of the buttons to just have their default text, you can set the value to `true` instead of a string:
@@ -147,13 +152,15 @@ swal("Are you sure you want to do this?", {
   buttons: ["Oh noez!", true],
 });
 ```
+
 <preview-button></preview-button>
 
-So what if you need *more* than just a cancel and a confirm button? Don't worry, SweetAlert's got you covered!
+So what if you need _more_ than just a cancel and a confirm button? Don't worry, SweetAlert's got you covered!
 
 By specifying an object for `buttons`, you can set exactly as many buttons as you like, and specify the value that they resolve to when they're clicked!
 
 In the example below, we set 3 buttons:
+
 - `cancel`, which by default resolves to `null` and has a custom `"Run away!"` text.
 - `catch`, which will resolve to the `value` we've specified (`"catch"`) and has the custom text `"Throw Pokéball!"`.
 - `defeat`. Here, we specify `true` to let SweetAlert set some default configurations for the button. In this case, it will set the `text` to `"Defeat"` (capitalized) and the resolved value to `defeat`. Had we set the `cancel` button to `true`, it would still resolve to `null` as expected.
@@ -168,10 +175,8 @@ swal("A wild Pikachu appeared! What do you want to do?", {
     },
     defeat: true,
   },
-})
-.then((value) => {
+}).then((value) => {
   switch (value) {
-
     case "defeat":
       swal("Pikachu fainted! You gained 500 XP!");
       break;
@@ -185,13 +190,14 @@ swal("A wild Pikachu appeared! What do you want to do?", {
   }
 });
 ```
+
 <preview-button></preview-button>
 
 You can check out all the available button options in the [docs](/docs#buttons).
 
 ## AJAX requests
 
-Since SweetAlert is promise-based, it makes sense to pair it with AJAX functions that are also promise-based. Below is an example of using `fetch` to search for artists on the iTunes API. Note that we're using `content: "input"` in order to both show an input-field *and* retrieve its value when the user clicks the confirm button:
+Since SweetAlert is promise-based, it makes sense to pair it with AJAX functions that are also promise-based. Below is an example of using `fetch` to search for artists on the iTunes API. Note that we're using `content: "input"` in order to both show an input-field _and_ retrieve its value when the user clicks the confirm button:
 
 ```js
 swal({
@@ -202,39 +208,40 @@ swal({
     closeModal: false,
   },
 })
-.then(name => {
-  if (!name) throw null;
+  .then((name) => {
+    if (!name) throw null;
 
-  return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
-})
-.then(results => {
-  return results.json();
-})
-.then(json => {
-  const movie = json.results[0];
+    return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+  })
+  .then((results) => {
+    return results.json();
+  })
+  .then((json) => {
+    const movie = json.results[0];
 
-  if (!movie) {
-    return swal("No movie was found!");
-  }
+    if (!movie) {
+      return swal("No movie was found!");
+    }
 
-  const name = movie.trackName;
-  const imageURL = movie.artworkUrl100;
+    const name = movie.trackName;
+    const imageURL = movie.artworkUrl100;
 
-  swal({
-    title: "Top result:",
-    text: name,
-    icon: imageURL,
+    swal({
+      title: "Top result:",
+      text: name,
+      icon: imageURL,
+    });
+  })
+  .catch((err) => {
+    if (err) {
+      swal("Oh noes!", "The AJAX request failed!", "error");
+    } else {
+      swal.stopLoading();
+      swal.close();
+    }
   });
-})
-.catch(err => {
-  if (err) {
-    swal("Oh noes!", "The AJAX request failed!", "error");
-  } else {
-    swal.stopLoading();
-    swal.close();
-  }
-});
 ```
+
 <preview-button></preview-button>
 
 ## Using DOM nodes as content
@@ -249,11 +256,11 @@ Let's see how we can recreate the functionality of the following modal...
 ```js
 swal("Write something here:", {
   content: "input",
-})
-.then((value) => {
+}).then((value) => {
   swal(`You typed: ${value}`);
 });
 ```
+
 <preview-button></preview-button>
 
 ...using a custom DOM node!
@@ -261,8 +268,8 @@ swal("Write something here:", {
 We're going to use [React](https://facebook.github.io/react) here, since it's a well-known UI library that can help us understand how to create more complex SweetAlert interfaces, but you can use any library you want, as long as you can extract a DOM node from it!
 
 ```js
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
 const DEFAULT_INPUT_TEXT = "";
 
@@ -291,16 +298,13 @@ class MyInput extends Component {
 
   render() {
     return (
-      <input
-        value={this.state.text}
-        onChange={this.changeText.bind(this)}
-      />
-    )
+      <input value={this.state.text} onChange={this.changeText.bind(this)} />
+    );
   }
 }
 
 // We want to retrieve MyInput as a pure DOM node:
-let wrapper = document.createElement('div');
+let wrapper = document.createElement("div");
 ReactDOM.render(<MyInput />, wrapper);
 let el = wrapper.firstChild;
 
@@ -316,11 +320,11 @@ swal({
       value: DEFAULT_INPUT_TEXT,
     },
   },
-})
-.then((value) => {
+}).then((value) => {
   swal(`You typed: ${value}`);
 });
 ```
+
 <preview-button data-function="reactExample"></preview-button>
 
 This might look very complex at first, but it's actually pretty simple. All we're doing is creating an input tag as a React component. We then extract its DOM node and pass it into under the `swal` function's `content` option to render it as an unstyled element.
@@ -334,7 +338,6 @@ The only code that's specific to SweetAlert is the `swal.setActionValue()` and t
   </figcaption>
 </figure>
 
-
 # Using with libraries
 
 While the method documented above for creating more advanced modal designs works, it gets quite tedious to manually create nested DOM nodes. That's why we've also made it easy to integrate your favourite template library into SweetAlert, using the [SweetAlert Transformer](https://github.com/sweetalert/transformer).
@@ -346,37 +349,36 @@ In order to use SweetAlert with JSX syntax, you need to install [SweetAlert with
 After that, it's easy. Whenever you want to use JSX in your SweetAlert modal, simply import swal from `@sweetalert/with-react` instead of from `sweetalert`.
 
 ```js
-import React from 'react'
-import swal from '@sweetalert/with-react'
+import React from "react";
+import swal from "@sweetalert/with-react";
 
 swal(
   <div>
     <h1>Hello world!</h1>
-    <p>
-      This is now rendered with JSX!
-    </p>
+    <p>This is now rendered with JSX!</p>
   </div>
-)
+);
 ```
+
 <preview-button data-function="withReactExample"></preview-button>
 
 The JSX syntax replaces the modal's `content` option, so you can still use all of SweetAlert's other features. Here's how you could implement that Facebook modal that we saw earlier:
 
 ```js
-import React from 'react'
-import swal from '@sweetalert/with-react'
+import React from "react";
+import swal from "@sweetalert/with-react";
 
-const onPick = value => {
-  swal("Thanks for your rating!", `You rated us ${value}/3`, "success")
-}
+const onPick = (value) => {
+  swal("Thanks for your rating!", `You rated us ${value}/3`, "success");
+};
 
 const MoodButton = ({ rating, onClick }) => (
-  <button 
+  <button
     data-rating={rating}
-    className="mood-btn" 
+    className="mood-btn"
     onClick={() => onClick(rating)}
   />
-)
+);
 
 swal({
   text: "How was your experience getting help with this issue?",
@@ -385,25 +387,15 @@ swal({
   },
   content: (
     <div>
-      <MoodButton 
-        rating={1} 
-        onClick={onPick}
-      />
-      <MoodButton 
-        rating={2} 
-        onClick={onPick}
-      />
-      <MoodButton 
-        rating={3} 
-        onClick={onPick}
-      />
+      <MoodButton rating={1} onClick={onPick} />
+      <MoodButton rating={2} onClick={onPick} />
+      <MoodButton rating={3} onClick={onPick} />
     </div>
-  )
-})
+  ),
+});
 ```
 
 <preview-button data-function="withReactOptionsExample"></preview-button>
-
 
 # Upgrading from 1.X
 

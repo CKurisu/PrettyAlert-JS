@@ -23,25 +23,25 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-}
-.swal-overlay::before {
-  content: " ";
-  display: inline-block;
-  vertical-align: middle; /* vertical alignment of the inline element */
-  height: 100%;
-}
+  &::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+  }
 
-swal-overlay--show-modal {
-  opacity: 1;
-  pointer-events: auto;
-}
+  &--show-modal {
+    opacity: 1;
+    pointer-events: auto;
 
-.swal-overlay .swal-modal {
-  opacity: 1;
-  pointer-events: auto;
-  box-sizing: border-box;
-  animation: showSweetAlert 0.3s;
-  will-change: transform;
+    & .swal-modal {
+      opacity: 1;
+      pointer-events: auto;
+      box-sizing: border-box;
+      animation: showSweetAlert 0.3s;
+      will-change: transform;
+    }
+  }
 }
 
 .swal-modal {

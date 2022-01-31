@@ -1,7 +1,5 @@
 /*
  * PrettyAlert
- * 2021 – CKurisu
- * https://github.com/CKurisu/PrettyAlert-JS
  */
 
 import init from './modules/init';
