@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://sweetalert.js.org">
+  <a href="https://prettyalertjs.github.io">
     <img alt="PrettyAlert" src="https://raw.githubusercontent.com/t4t5/sweetalert/e3c2085473a0eb5a6b022e43eb22e746380bb955/assets/logotype.png" width="300">
   </a>
 </p>
@@ -48,21 +48,21 @@ swal("Hello world!");
 
 ## Upgrading from 1.X
 
-Many improvements and breaking changes have been introduced in the 2.0 release. Make sure you read the [upgrade guide](https://ckurisu.github.io/PrettyAlert-JS/guides/#upgrading-from-1x) to avoid nasty suprises!
+Many improvements and breaking changes have been introduced in the 2.0 release. Make sure you read the [upgrade guide](https://prettyalertjs.github.io/guides/#upgrading-from-1x) to avoid nasty suprises!
 
 ## Guides
 
-- [Installation](https://ckurisu.github.io/PrettyAlert-JS/guides/#installation)
-- [Getting started](https://ckurisu.github.io/PrettyAlert-JS/guides/#getting-started)
-- [Advanced examples](https://ckurisu.github.io/PrettyAlert-JS/guides/#advanced-examples)
-- [Using with libraries](https://ckurisu.github.io/PrettyAlert-JS/guides/#using-with-libraries)
-- [Upgrading from 1.X](https://ckurisu.github.io/PrettyAlert-JS/guides/#upgrading-from-1x)
+- [Installation](https://prettyalertjs.github.io/guides/#installation)
+- [Getting started](https://prettyalertjs.github.io/guides/#getting-started)
+- [Advanced examples](https://prettyalertjs.github.io/guides/#advanced-examples)
+- [Using with libraries](https://prettyalertjs.github.io/guides/#using-with-libraries)
+- [Upgrading from 1.X](https://prettyalertjs.github.io/guides/#upgrading-from-1x)
 
 ## Documentation
 
-- [Configuration](https://ckurisu.github.io/PrettyAlert-JS/docs/#configuration)
-- [Methods](https://ckurisu.github.io/PrettyAlert-JS/docs/#methods)
-- [Theming](https://ckurisu.github.io/PrettyAlert-JS/docs/#theming)
+- [Configuration](https://prettyalertjs.github.io/docs/#configuration)
+- [Methods](https://prettyalertjs.github.io/docs/#methods)
+- [Theming](https://prettyalertjs.github.io/docs/#theming)
 
 ## Examples
 
@@ -174,7 +174,7 @@ if (willSearch) {
 
 ## Using with React
 
-SweetAlert has tools for [integrating with your favourite rendering library.](https://sweetalert.js.org/guides/#using-with-libraries).
+SweetAlert has tools for [integrating with your favourite rendering library.](https://prettyalertjs.github.io/guides/#using-with-libraries).
 
 If you're using React, you can install [SweetAlert with React](https://www.npmjs.com/package/@sweetalert/with-react) in addition to the main library, and easily add React components to your alerts like this:
 
@@ -190,7 +190,7 @@ swal(
 );
 ```
 
-[Read more about integrating with React](https://sweetalert.js.org/guides/#using-react)
+[Read more about integrating with React](https://prettyalertjs.github.io/guides/#using-react)
 
 ## Contributing
 

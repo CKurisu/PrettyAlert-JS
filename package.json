@@ -1,6 +1,6 @@
 {
   "name": "prettyalert",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A beautiful replacement for JS \"alert\"",
   "main": "dist/prettyalert.min.js",
   "types": "typings/prettyalert.d.ts",
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/CKurisu/PrettyAlert-JS/issues"
   },
-  "homepage": "https://github.com/CKurisu/PrettyAlert-JS#readme",
+  "homepage": "https://prettyalertjs.github.io/",
   "devDependencies": {
     "@types/jest": "19.2.3",
     "autoprefixer": "6.7.7",
