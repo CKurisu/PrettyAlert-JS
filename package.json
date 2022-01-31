@@ -1,6 +1,6 @@
 {
   "name": "prettyalert",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A beautiful replacement for JS \"alert\"",
   "main": "dist/prettyalert.min.js",
   "types": "typings/prettyalert.d.ts",
