@@ -9,7 +9,7 @@ module.exports = (_env, args) => {
 
   const BUILD_PATH = 'dist';
   const JS_FILE_NAME = 'prettyalert.min.js';
-  const devtool = IS_PROD ? false : 'source-map';
+  // const devtool = IS_PROD ? false : 'source-map';
 
   const plugins = [
     new webpack.optimize.ModuleConcatenationPlugin(),
@@ -99,6 +99,6 @@ module.exports = (_env, args) => {
       colors: true,
     },
 
-    devtool,
+    devtool: 'source-map',
   }
 };
